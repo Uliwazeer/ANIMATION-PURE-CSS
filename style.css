@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+    height:100vh;
+}
+p{
+    font-size:45px;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+    background: linear-gradient(90deg,#000,#fff,#000);
+    background-size: 80%;
+    overflow: hidden;
+    animation: animate 3s infinite linear;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+}
+@keyframes animate {
+    from{
+        background-position:-500%;
+    }
+    to{
+        background-position:500%;
+    }
+}
